@@ -1,0 +1,18 @@
+extends layout.pug
+
+block content
+
+  nav.nav
+      a(href='/')
+        span &larr;
+        |  Back
+
+  article.portfolio-intro
+    h1 Server Error
+    p Human friendly error message:
+    pre= `${err.message}`
+
+  nav.nav
+    a(href='/')
+      span &larr;
+      |  Back

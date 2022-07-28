@@ -1,0 +1,16 @@
+extends layout.pug
+
+block content
+
+  article.portfolio-intro
+    h1 Let's make the web great together!
+    p Here is a list of my lastest projects. My projects contain websites from Wireframes, UI Design, Prototype and development using HTML, CSS, JavaScript, PHP and WordPress.
+
+
+  article.portfolio-project-thumbs
+    .projects-box.box.grid
+      each project in projects
+        .cell
+          a(href=`/project/${project.id}`)
+            img.thumbnail(src=`${project.images}`, alt=`${project.title}`)
+            h5= project.title

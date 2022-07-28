@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+html(lang="en" dir="ltr")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title My Portfolio
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800', rel='stylesheet')
+    link(rel='stylesheet', href='/static/css/normalize.css')
+    link(rel='stylesheet', href='/static/css/styles.css')
+
+  body
+    #my-info.sidebar
+      .sidebar-info-box
+        br
+        .thumbnail-box
+          img.thumbnail(src='/static/images/profile-pic.jpg', alt='Getoar Morina')
+        .dev-intro-box
+          h5 Getoar Morina
+          p Description
+
+    .wrapper
+      .header
+        .header-info-box
+          button#menu-icon.menu-icon(type='button' data-toggle='my-info')
+          span Getoar Morina
+
+      block content
+
+  script(src='/static/js/script.js')
