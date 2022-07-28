@@ -6,8 +6,7 @@ block content
       a(href=`/about/`) Back &larr;
 
   article.portfolio-intro
-    h1= `${err.message}`
-    p The page you have been looking for is not found
-
+    h1= `${err.message} - Status: ${err.status}`
+    pre= `${err.stack}`
   nav.nav
     a(href=`/about/`) Back &larr;

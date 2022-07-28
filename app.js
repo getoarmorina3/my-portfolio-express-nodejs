@@ -46,7 +46,6 @@ app.use((err, req, res, next) => {
     console.log("Page not found");
   } else {
     res.status(err.status || 500);
-    err.message = `Looks like there went something wrong with the server.`;
     res.render('error', { err });
   }
 });

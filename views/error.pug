@@ -6,8 +6,8 @@ block content
       a(href=`/about/`) Back &larr;
 
   article.portfolio-intro
-    h1 Server Error - 500
-    p= `${err.message}`
+    h1 Server Error - Status: 500
+    pre= `${err.stack}`
 
   nav.nav
     a(href=`/`) Back &larr;
