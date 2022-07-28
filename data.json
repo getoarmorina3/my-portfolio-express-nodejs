@@ -11,30 +11,30 @@
         },
         {
             "id": 1,
-            "title": "Data Pagination and Filtering",
-            "description": "In this project, I have used a common web development technique known as “pagination” and filtering to enhance the usability of a web page.",
-            "technologies": ["JavaScript", "CSS", "HTML"],
-            "live_link": "https://getoarmorina3.github.io/data-pagination-and-filtering/",
-            "github_link": "https://github.com/getoarmorina3/data-pagination-and-filtering",
-            "images": "/static/images/project1.png"
+            "title": "Landing Page - Easy Banking",
+            "description": "For this project, I have built a landing page for a fictional company called Easy Banking, this is a front-end coding challenge from Frontend Mentor",
+            "technologies": ["CSS", "SCSS", "HTML", "JavaScript"],
+            "live_link": "https://getoarmorina3.github.io/frontend-mentor-challenge/",
+            "github_link": "https://github.com/getoarmorina3/frontend-mentor-challenge",
+            "images": "/static/images/project5.png"
         },
         {
             "id": 2,
-            "title": "Interactive Form",
-            "description": "In this project, I have uses JavaScript to enhance an interactive registration form for a fictional Full Stack conference. With form fields that have real time validation and conditional error messages.",
-            "technologies": ["JavaScript", "CSS", "HTML"],
-            "live_link": "https://getoarmorina3.github.io/interactive-form/",
-            "github_link": "https://github.com/getoarmorina3/interactive-form",
-            "images": "/static/images/project2.png"
-        },
-        {
-            "id": 3,
             "title": "Phrase Hunter Game",
             "description": "In this project, I have created a browser-based, word guessing game: \"Phrase Hunter.\" I have used JavaScript and OOP (Object-Oriented Programming) to select a random, hidden phrase, which a player tries to guess, by clicking letters on an onscreen keyboard or his own keyboard.",
             "technologies": ["JavaScript", "CSS", "HTML"],
             "live_link": "https://getoarmorina3.github.io/phrase-hunter-oop/",
             "github_link": "https://github.com/getoarmorina3/phrase-hunter-oop",
             "images": "/static/images/project3.png"
+        },
+        {
+            "id": 3,
+            "title": "Data Pagination and Filtering",
+            "description": "In this project, I have used a common web development technique known as “pagination” and filtering to enhance the usability of a web page.",
+            "technologies": ["JavaScript", "CSS", "HTML"],
+            "live_link": "https://getoarmorina3.github.io/data-pagination-and-filtering/",
+            "github_link": "https://github.com/getoarmorina3/data-pagination-and-filtering",
+            "images": "/static/images/project1.png"
         },
         {
             "id": 4,
@@ -44,6 +44,15 @@
             "live_link": "https://getoarmorina3.github.io/public-api-request/",
             "github_link": "https://github.com/getoarmorina3/public-api-request",
             "images": "/static/images/project4.png"
+        },
+        {
+            "id": 5,
+            "title": "Interactive Form",
+            "description": "In this project, I have uses JavaScript to enhance an interactive registration form for a fictional Full Stack conference. With form fields that have real time validation and conditional error messages.",
+            "technologies": ["JavaScript", "CSS", "HTML"],
+            "live_link": "https://getoarmorina3.github.io/interactive-form/",
+            "github_link": "https://github.com/getoarmorina3/interactive-form",
+            "images": "/static/images/project2.png"
         }
     ]
 }
