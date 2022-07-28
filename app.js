@@ -24,6 +24,19 @@ app.get('/project/:id', (req, res, next) => {
   }
 });
 
+app.use((req, res, next) => {
+  err = new Error('Page not found');
+  err.status = 404;
+  err.message = `${err.status}`;
+  next(err);
+});
+
+app.use((err, req, res, next) => {
+  if (err.status === 404) {
+    console.log('No route');
+  }
+});
+
 app.listen(3000, () => {
     console.log('The application is running on localhost:3000!')
 });
