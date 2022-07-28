@@ -14,3 +14,10 @@ I'll use Node.js and Express to:
     Set up the middleware to utilize static files like CSS
     Handle errors
     Set up a server to serve the project
+
+CSS Style Modifications:
+
+    Changed body bg-color
+    Changed sidebar bg-color
+    Changed sidebar h5 text-color
+    Added border radius at sidebar profile-pic
