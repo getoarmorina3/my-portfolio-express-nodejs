@@ -22,4 +22,4 @@ CSS Style Modifications:
     Changed sidebar h5 text-color
     Added border radius at sidebar profile-pic
 
-[Live Demo] (https://my-portfolio-express-nodejs.herokuapp.com/)
+[Live Demo](https://my-portfolio-express-nodejs.herokuapp.com/)
