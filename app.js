@@ -6,56 +6,24 @@ const app = express();
 app.set('view engine', 'pug');
 app.use('/static', express.static('public'));
 
-// Index Page
+// rebder index page
 app.get('/', (req,res) => {
     res.render('index', {projects});
 })
 
-// About page
+// render about page
 app.get('/about', (req, res) => {
     res.render('about');
 })
 
-/**
- * Displays projects depending on project id
- */
 app.get('/project/:id', (req, res, next) => {
   const projectId = req.params.id;
   const project = projects.find(({ id }) => id === +projectId);
   if (project) {
     res.render('project', { project });
-  } else {
-    const err = new Error();
-    err.status = 404;
-    res.render('page-not-found', {err});
-    err.message = 'Project not found';
-    next(err);
   }
 });
 
-//404 error handler
-app.use((req, res, next) => {
-  const err = new Error('Page not found');
-  err.status = 404;
-  console.log(`404: The page you're looking for doesn't exist.`)
-  next(err);
+app.listen(3000, () => {
+    console.log('The application is running on localhost:3000!')
 });
-
-//Global error handler
-app.use((err, req, res, next) => {
-  res.locals.error = err;
-  res.status(err.status);
-  if (err.status === 404) {
-    res.render('page-not-found', { err });
-  } else {
-    res.status(err.status || 500);
-    err.message = err.message || `Something went wrong on the server.`;
-    console.log(`${err.status}: Something went wrong on the server.`)
-    res.render('error', { err });
-  }
-});
-
-/**
- * When starting localhost it will listen to the port 3000
- */
-app.listen(3000);
